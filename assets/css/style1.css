@@ -1,0 +1,774 @@
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+  } 
+
+  .project-list{
+    display: none;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto; */
+}
+
+
+div.about-self{
+    position: relative;
+    color: white;
+}
+
+
+.about-mine h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+    padding-bottom: 10px;
+   }
+
+   .progress-bars{
+    
+    height: 5px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.3) ;
+    border-radius:3px ;
+    box-shadow: 0 0 10px #272829;
+}
+
+.progress-bars span{
+    height: 5px;
+    float: left;
+    background: #3386d4b3;
+}
+
+.html{
+    width: 100%;
+    animation: html 2s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.css{
+width: 85%;
+ animation: css 2s;
+}
+
+@keyframes css {
+ 0%{
+     width: 0%;
+ }
+ 100%{
+     width: 85%;
+ }
+}
+
+.js{
+ width: 60%;
+ animation: js 2s;
+}
+
+@keyframes js {
+ 0%{
+     width: 0%;
+ }
+ 100%{
+     width: 60%;
+ }
+}
+
+.php{
+ width: 80%;
+ animation: php 2s;
+}
+
+@keyframes php {
+ 0%{
+     width: 0%;
+ }
+ 100%{
+     width: 80%;
+ }
+}
+
+.cms{
+ width: 30%;
+ animation: cms 2s;
+}
+
+@keyframes cms {
+ 0%{
+     width: 0%;
+ }
+ 100%{
+     width: 30%;
+ }
+}
+.oops{
+ width: 80%;
+ animation: html 2s;
+}
+
+@keyframes oops {
+ 0%{
+     width: 0%;
+ }
+ 100%{
+     width: 80%;
+ }
+}
+
+   
+
+img.small-screen{
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+}
+
+ h2::after{
+    content: ' ';
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: aqua;
+    left: 0;
+    bottom: 0;
+}
+
+.credits,.developer{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #eaebf0;
+    }
+    
+    .developer strong{
+       color: #149ddd;
+    }
+    
+    .credits a{
+        text-decoration: none;
+    }
+
+
+
+.skils{
+    background-color: #f5f8fd;
+}
+
+
+.profile-section img{
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #2c2f3f;
+    
+    }
+    
+    .profile-section img
+    {
+        border-radius: 50%;
+    }
+    
+    .profile-section h1{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
+    }
+    
+    .social-medias{
+        padding: 12px 10px;
+        text-align: center;
+    
+    }
+    .social-medias a{
+        font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 12px 10px;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    }
+    
+    .top{
+        position: fixed;
+        text-decoration: none;
+       height: 40px;
+       width: 40px;
+       
+        border-radius: 60px;
+        right: 15px;
+        bottom: 15px;
+        background: #149ddd;
+        color: #fff;
+        transition: display 0.5s ease-in-out;
+        z-index: 99999;
+      
+    
+    }
+    
+    .top i{
+        font-size: 24px;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    }
+    
+
+
+
+/*  For Mobile View */
+
+@media screen and (max-width : 680px){
+
+    .containers{
+        height: 100%;
+        width: 100%;
+        max-width: 680px;
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows:auto auto auto auto auto auto auto;
+        grid-template-areas:"header"
+                            "sidebar"
+                            "main-content"
+                            "resume"
+                            "portfolio"
+                            "contact"
+                            "footer";
+    }
+    .header
+    {
+       /* height: auto;*/
+       width: 100%;
+        height:80vh;
+ 
+        grid-area: header;
+        background-image: url("../img/hero-bg.jpg");
+        background-size: cover;
+    }
+
+    div.about-self{
+        position: absolute;
+        top: 40%;
+        right: 40%;
+    }
+
+    div.about-self h1{
+       
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 40px;
+
+    }
+
+    div.about-self p {
+        margin-left: 10px;
+        line-height: 26px;
+        font-size: 26px;
+    }
+
+    div.about-self p span{
+        color: black;
+    }
+
+
+    .sidebar{
+        grid-area:sidebar;
+        background-color: #040b14;
+        display: none;
+    }
+    .main-content{
+        grid-area: main-content;
+       
+    }
+
+
+   .progress-bars{
+    
+    height: 5px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.3) ;
+    border-radius:3px ;
+    box-shadow: 0 0 10px #272829;
+}
+
+
+    
+    .footer{
+        grid-area: footer;
+        background-color: #040b14;
+    }
+
+   
+
+    .profile-image img{
+        max-width: 100%;
+    }
+
+    
+
+    .resume {
+        grid-area: resume;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio{
+        grid-area: portfolio;
+        display: flex;
+        flex-direction: wrap;
+    }
+
+    .contact{
+        grid-area: contact;
+        display: flex;
+        flex-direction: wrap;
+    }
+
+    
+
+
+}
+
+
+
+/* for bigger screen */
+
+
+@media screen and (min-width: 681px) and (max-width:1024px){
+   
+    .containers{
+   
+   
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:"header"
+                        "sidebar"
+                        "main-content"
+                        "resume"
+                        "portfolio" 
+                        "contact"
+                        "footer";
+   }
+   .header{
+     height:80vh;
+     width: 100;
+     grid-area: header;
+     background-image: url("../img/hero-bg.jpg");
+     background-size: cover;
+ }
+ .sidebar{
+     grid-area:sidebar;
+     display: none;
+     background-color: blue;
+ }
+ .main-content{
+     grid-area: main-content;
+
+ }
+
+ .resume{
+     grid-area: resume;
+ }
+
+ .portfolio{
+     grid-area: portfolio;
+ }
+
+ .contact{
+     grid-area: contact;
+ }
+
+ .footer{
+     grid-area: footer;
+      background-color: #040b14;    
+ }
+ 
+ .profile{
+    display: flex;
+  flex-direction: wrap;
+  margin-top: 20px;
+  
+ 
+}
+
+ 
+
+}
+
+/* For latpop or dekstop view */
+
+
+@media screen and (min-width : 1025px){
+    .containers{
+        height: 100%;
+        max-height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns:18% 41% 41%;
+        grid-template-rows: auto auto auto auto auto auto auto auto ;
+        grid-template-areas: "sidebar header header"
+                             "sidebar header header"
+                             "sidebar main-content main-content"
+                             "sidebar main-content main-content"
+                             "sidebar resume resume"
+                             "sidebar portfolio portfolio"
+                             "footer contact contact"
+                             ;
+       }
+       .header{
+        width: 100%;
+        height: 100vh;
+         grid-area: header;
+         background-image: url("../img/hero-bg.jpg");
+         background-attachment: fixed;
+         background-size: cover;
+     }
+     .sidebar{
+       
+         grid-area:sidebar;
+         background-color: #040b14;
+         background-size: cover;
+     }
+     .main-content{
+         grid-area: main-content;
+         margin-left: 15px;
+     }
+
+     .resume{
+         grid-area: resume;
+         margin-left: 15px;
+     }
+     .portfolio{
+         grid-area: portfolio;
+         margin-left: 15px;
+     }
+     .services{
+         grid-area: services;
+         margin-left: 15px;
+     }
+     .contact{
+         grid-area: contact;
+         margin-left: 15px;
+        
+     }
+
+     .footer{
+        grid-area: footer;
+     
+        background-color: #040b14;
+        background-size: cover;
+     }
+
+     ul{
+         list-style: none;
+     }
+     
+     div.abouts, div.resumes{
+       
+         padding: 60px 0;
+       
+     }
+
+     div.about-self{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+    }
+
+    div.about-self h1{
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-size: 64px;
+        line-height: 56px;
+        letter-spacing: 1px;
+    }
+
+    div.about-self p {
+        margin-left: 20px;
+        line-height: 26px;
+        font-size: 26px;
+    }
+
+    div.about-self p span{
+        color: black;
+    }
+
+    .main-content{
+        display: gird;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto auto;
+    }
+
+    .about-section h2{
+        margin-bottom: 20px;
+    }
+    
+    
+
+   .profile{
+       display: flex;
+     flex-direction: row;
+     margin-top: 20px;
+     
+    
+   }
+
+   
+
+   .profile-image img{
+       max-width: 100%;
+   }
+
+  
+
+   .about-mine div{
+       max-width: 50%;
+   }
+
+   .profile-row{
+       margin-left: 20px;
+   }
+
+
+
+   .about-row{
+       display: flex;
+       flex-direction: row;
+       margin-top: 15px;
+       margin-bottom: 10px;
+   }
+
+   
+
+   .about-row div:first-child{
+       margin-right: 30%;
+   }
+
+   .about-row div ul li {
+       margin-bottom: 10px;
+   }
+
+   .about-row div ul li i{
+    font-size: 20px;
+padding-right: 2px;
+color:#149ddd;
+   }
+
+   .facts-show{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       margin-top: 20px;
+       padding-left: 30px;
+       padding-bottom: 20px;
+   }
+
+   .facts-title h2 , .resume h2{
+       margin-bottom: 20px;
+   }
+
+   .skill-title h2{
+       margin-bottom: 20px;
+   }
+
+  
+
+   .skills-show{
+       display: flex;
+       flex-direction: row;
+   }
+
+   .first-section , .second-section{
+       width: 50%;
+   }
+   .second-section{
+       padding-left: 20px;
+   }
+
+   .val{
+       float: right;
+   }
+
+   
+
+
+.resume-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.resume-item{
+    position: relative;
+    padding-left: 10px;
+}
+ 
+ .resume-item::before{
+ content: "";
+ position: absolute;
+ width: 16px;
+ height: 16px;
+ border-radius: 50px;
+ left: -9px;
+ top: 0;
+ background: #fff;
+ border: 2px solid #1f5297;
+}
+
+
+.education,.experiences{
+    width: 50%;
+}
+
+.resume-item h5{
+    font-size: 16px;
+background: #e4edf9;
+padding: 5px 15px;
+display: inline-block;
+font-weight: 600;
+margin-bottom: 10px;
+}
+
+/* .project-bars{
+    display: flex;
+    flex-direction: row;
+} */
+/*
+.profile-section img{
+margin: 15px auto;
+display: block;
+width: 120px;
+border: 8px solid #2c2f3f;
+
+}
+
+.profile-section img
+{
+    border-radius: 50%;
+}
+
+.profile-section h1{
+font-size: 24px;
+margin: 0;
+padding: 0;
+font-weight: 600;
+-moz-text-align-last: center;
+text-align-last: center;
+font-family: "Poppins", sans-serif;
+}
+
+.social-medias{
+    padding: 12px 10px;
+    text-align: center;
+
+}
+.social-medias a{
+    font-size: 18px;
+display: inline-block;
+background: #212431;
+color: #fff;
+line-height: 1;
+padding: 12px 10px;
+margin-right: 4px;
+border-radius: 50%;
+text-align: center;
+width: 36px;
+height: 36px;
+transition: 0.3s;
+}
+8
+*/
+
+.resume-list li a{
+    
+    color: #a8a9b4;
+    padding: 12px 0;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+    
+}
+
+.resume-list li{
+    margin-bottom: 50px;
+    padding-bottom: auto;
+    font-size: medium  ;
+}
+
+
+li.active > a:active{
+    color: red;
+}
+
+.resume-list li a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+li.active{
+    color: red;
+    margin-top: 10px;
+}
+
+.sidemenu{
+    position: fixed;
+   
+}
+
+
+
+
+
+
+
+
+/*
+
+.credits,.developer{
+padding-top: 5px;
+text-align: center;
+font-size: 13px;
+color: #eaebf0;
+}
+
+.developer strong{
+   color: #149ddd;
+}
+
+.credits a{
+    text-decoration: none;
+}
+
+*/
+
+
+
+
+ 
+
+}
+
+.portfolio{
+    background-color: #f5f8fd;
+}
+
+.project-templates{
+    height: 30%;
+}
